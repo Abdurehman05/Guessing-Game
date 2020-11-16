@@ -6,22 +6,30 @@ namespace Guessing_Game
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Can you guess the secret number?");
-            Console.Write("Your Guess number is: ");
+
             int secretNumber = 42;
-            int guess = int.Parse(Console.ReadLine());
+            int count = 0;
 
-            if (guess == secretNumber)
+            while (count < 4)
             {
-                Console.WriteLine("You got It!!");
+                Console.WriteLine("Can you guess the secret number?");
+                Console.Write("Your Guess number is: ");
+
+                int guess = int.Parse(Console.ReadLine());
+
+                if (guess == secretNumber)
+                {
+                    Console.WriteLine("You got It!!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Wrong");
+                }
+
+                count++;
+
             }
-            else
-            {
-                Console.WriteLine("Wrong");
-            }
-
-
-
         }
     }
 }
