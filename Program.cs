@@ -27,7 +27,14 @@ namespace Guessing_Game
                 }
                 else
                 {
-                    Console.WriteLine("Wrong");
+                    if (guess > secretNumber)
+                    {
+                        Console.WriteLine("Wrong! Guess too high");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong! Guess too low");
+                    }
                 }
 
                 count++;
