@@ -8,12 +8,12 @@ namespace Guessing_Game
         {
 
             int secretNumber = 42;
-            int count = 0;
-
-            while (count < 4)
+            int count = 1;
+            while (count < 5)
             {
                 Console.WriteLine("Can you guess the secret number?");
                 Console.Write("Your Guess number is: ");
+                Console.Write($"Your Guess ({count}) ");
 
                 int guess = int.Parse(Console.ReadLine());
 
