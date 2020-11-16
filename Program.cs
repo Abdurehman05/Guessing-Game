@@ -8,8 +8,18 @@ namespace Guessing_Game
         {
             Console.WriteLine("Can you guess the secret number?");
             Console.Write("Your Guess number is: ");
-            string guess = Console.ReadLine();
-            Console.WriteLine(guess);
+            int secretNumber = 42;
+            int guess = int.Parse(Console.ReadLine());
+
+            if (guess == secretNumber)
+            {
+                Console.WriteLine("You got It!!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong");
+            }
+
 
 
         }
