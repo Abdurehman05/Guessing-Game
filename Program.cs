@@ -6,7 +6,12 @@ namespace Guessing_Game
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Can you guess the secret number?");
+            Console.Write("Your Guess number is: ");
+            string guess = Console.ReadLine();
+            Console.WriteLine(guess);
+
+
         }
     }
 }
