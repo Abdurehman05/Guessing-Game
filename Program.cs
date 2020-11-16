@@ -6,14 +6,17 @@ namespace Guessing_Game
     {
         static void Main(string[] args)
         {
-
-            int secretNumber = 42;
+            System.Random random = new System.Random();
+            int secretNumber = random.Next(1, 100);
             int count = 1;
             while (count < 5)
             {
                 Console.WriteLine("Can you guess the secret number?");
+                Console.WriteLine($"{5 - count} guesses has left.");
+                Console.WriteLine($"Your Guess number ({count}):");
                 Console.Write("Your Guess number is: ");
-                Console.Write($"Your Guess ({count}) ");
+
+
 
                 int guess = int.Parse(Console.ReadLine());
 
